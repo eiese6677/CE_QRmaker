@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>QR 코드</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        text-align: center;
+        padding: 32px;
+      }
+      #qrcode {
+        margin: 24px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>QR 코드</h2>
+    <div id="qrcode"></div>
+    <script src="qrcode.min.js"></script>
+    <script>
+      function getParam(name) {
+        const url = new URL(window.location.href);
+        return url.searchParams.get(name);
+      }
+      const url = getParam("url");
+      if (url) {
+        new QRCode(document.getElementById("qrcode"), {
+          text: url,
+          width: 240,
+          height: 240,
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>QR 공유</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        min-width: 250px;
+        padding: 16px;
+      }
+      #qrcode {
+        margin: 16px 0;
+        text-align: center;
+      }
+      button {
+        width: 100%;
+        padding: 8px;
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>QR 코드로 공유</h2>
+    <div id="qrcode"></div>
+    <div style="display: flex; gap: 8px; flex-direction: column">
+      <button id="downloadBtn">QR 코드 이미지 다운로드</button>
+      <button id="selectBtn">요소 선택 (클릭하여 CSS 선택자 얻기)</button>
+    </div>
+    <script src="qrcode.min.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
