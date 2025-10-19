@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "QR 공유 확장앱",
-  "version": "1.0",
-  "description": "현재 페이지의 URL을 QR 코드로 공유할 수 있는 크롬 확장앱입니다.",
+  "name": "QR 공유/ 요소 편집 확장앱",
+  "version": "1.1",
+  "description": "현재 페이지의 URL을 QR 코드로 공유하고 요소를 편집할 수 있는 크롬 확장앱입니다.",
   "permissions": ["tabs", "activeTab", "scripting"],
   "action": {
     "default_popup": "popup.html",
